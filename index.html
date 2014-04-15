@@ -3,9 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Shopping List</title>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Hammersmith+One' rel='stylesheet' type='text/css'>
 <link href="style/style.css" type="text/css" rel="stylesheet" />
 <link href="style/normalize.css" type="text/css" rel="stylesheet" />
-<link href='http://fonts.googleapis.com/css?family=Poiret+One|Hammersmith+One' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script>
+  $(function() {
+    $( ".answersWrapper" ).sortable();
+    $( ".answersWrapper" ).disableSelection();
+  });
+  </script>
 </head>
 
 <body>
@@ -18,10 +27,22 @@
 </div>
 <div class="contentArea">
 	<div class="wrapper">
-    	<input type="text" class="listInput" value="Add List Item Here" /><button>Add Item</button>
-        <h4>Click to cross out.  Double click to delete an item.</h4>
-        <div class="answersArea">
+    	<div class="buttonArea">
+        <input type="text" class="listInput" placeholder="Add List Item Here" /><button class="addItemBtn">Add Item</button><button class="clearListBtn">Clear List</button>
         </div>
+        <div class="answersWrapper">
+            <div class="answersArea">
+            cookies
+            </div>
+            <div class="answersArea">
+            cake
+            </div>
+            <div class="answersArea">
+            candy
+            </div>
+        </div>
+        <h4>Click to cross out.  Drag items around to re-arrange.<br />  Double click to delete an item or click the Clear List button.</h4>
+        
   </div>
 </div>
 <div class="footer">
