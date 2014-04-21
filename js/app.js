@@ -26,7 +26,7 @@ $(document).ready(function(){
 	}
 
 	function addItem() {     
-    	var content = "<div class=\"content\">" + " " + "</div>";
+    	var content = "<div class=\"answersArea\">" + " " + "</div>";
    		 $(".answersWrapper").append(content); 
 	}
 	// getInput function
