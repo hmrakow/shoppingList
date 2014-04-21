@@ -13,29 +13,22 @@ $(document).ready(function(){
     	if(e.keyCode === 13) {
        	 	getInput();
     	}
-	});
- 
+	}); 
  
 	// Obtaining input and then calling addItem() with the input
 	function getInput() {
     	var listInput = $(".listInput");
-    	var input = listInput.val();
-         	
-			addItem(input);
-    	
+    	var input = listInput.val();         	
+			addItem(input);    	
 	}
 
 	function addItem() {     
     	var content = "<div class=\"answersArea\">" + " " + "</div>";
    		 $(".answersWrapper").append(content); 
 	}
-	// getInput function
-	function getInput() {
-    	var listInput = $(".listInput").val(); //gets value of input
-	}
 	
 	//remove object from list
-	$(".answersArea").dblclick(function(){
+	$(".answersWrapper").dblclick(function(){
 		$(this).hide();
 	});
 	
