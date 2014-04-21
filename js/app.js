@@ -22,7 +22,6 @@ $(document).ready(function(){
     	var input = listInput.val();
          	
 			addItem(input);
-        	listInput.val("");
     	
 	}
 
