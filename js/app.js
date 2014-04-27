@@ -2,8 +2,8 @@
 
 $(document).ready(function(){
 	$("#addItemBtn").click (function(){
-		var content = $("#listInput").val();
-		var addItem = $('<div class="answersArea"></div>').text(my_text);
+		var my_content = $("#listInput").val();
+		var addItem = $('<div class="answersArea"></div>').text(my_content);
 		//add line through
 		addItem.on('click', function(){
 			$(this).toggleClass("lineThrough");
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
 		if (my_text!=""){
-			$("#answersWrapper").append(content);
+			$("#answersWrapper").append(addItem);
 			$("#listInput").val("");
 		}
 
@@ -29,8 +29,8 @@ $(document).ready(function(){
   
   $(document).keypress(function(e){
     if(e.which == 13){
-    	var content = $("#listInput").val();
-		var addItem = $('<div class="answersArea"></div>').text(my_text);
+    	var my_content = $("#listInput").val();
+		var addItem = $('<div class="answersArea"></div>').text(my_content);
 			//add line through
 			addItem.on('click', function(){
 				$(this).toggleClass("lineThrough");
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 			if (my_text!="")
 			{
-				$("#answersWrapper").append(content);
+				$("#answersWrapper").append(addItem);
 				$("#listInput").val("");
 			}
 			//warning to enter in content
