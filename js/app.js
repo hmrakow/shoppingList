@@ -24,7 +24,6 @@ $(document).ready(function(){
 			$("#listInput").val("");
 		}
 
-		else{alert("Type an item in before you add it.")}
 	});
   
   $(document).keypress(function(e){
