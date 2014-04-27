@@ -12,7 +12,7 @@
 .contentArea button {background: #e86425;color: white;border: none; padding: 6px 20px;margin: 0 5px;border-radius: 5px;font-family: 'Hammersmith One', sans-serif;}
 .contentArea h4{font-family: 'Poiret One', cursive; text-align:center;}
 .buttonArea{margin-bottom:30px;}
-.answersWrapper {
+#answersWrapper {
 border: 3px dashed;
 width: 520px;
 margin: 10px auto;
