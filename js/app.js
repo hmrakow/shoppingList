@@ -19,7 +19,7 @@ $(document).ready(function(){
 		});
 
 
-		if (my_text!=""){
+		if (my_content!=""){
 			$("#answersWrapper").append(addItem);
 			$("#listInput").val("");
 		}
@@ -46,7 +46,7 @@ $(document).ready(function(){
 			});
 
 
-			if (my_text!="")
+			if (my_content!="")
 			{
 				$("#answersWrapper").append(addItem);
 				$("#listInput").val("");
