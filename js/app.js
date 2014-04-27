@@ -17,7 +17,11 @@ $(document).ready(function(){
 			$("#answersWrapper").append(addItem);
 			$("#listInput").val("");
 		}
-
+		//warning to enter in content
+		else 
+		{
+			alert("Type an item in before you add it.")
+		}
 	});
   
   $(document).keypress(function(e){
