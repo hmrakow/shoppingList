@@ -12,12 +12,6 @@ $(document).ready(function(){
 		addItem.on('dblclick', function(){
 			$(this).fadeOut('fast');
 		});
-		
-		//clear list
-		$(".clearListBtn").on('click', function(){
-			$(".answersArea").remove();		
-		});
-
 
 		if (my_content!=""){
 			$("#answersWrapper").append(addItem);
@@ -38,12 +32,6 @@ $(document).ready(function(){
 			addItem.on('dblclick', function(){
 				$(this).fadeOut('fast');
 			});
-			
-			//clear list
-			$(".clearListBtn").on('click', function(){
-				$(".answersArea").remove();		
-			});
-
 
 			if (my_content!="")
 			{
