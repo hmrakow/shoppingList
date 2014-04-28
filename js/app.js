@@ -22,6 +22,11 @@ $(document).ready(function(){
 		{
 			alert("Type an item in before you add it.")
 		}
+		
+		//clear list
+		$(".clearListBtn").on('click', function(){
+		$(".answersArea").remove();		
+		});
 	});
   
   $(document).keypress(function(e){
@@ -47,6 +52,10 @@ $(document).ready(function(){
 			{
 				alert("Type an item in before you add it.")
 			}
+			//clear list
+		$(".clearListBtn").on('click', function(){
+		$(".answersArea").remove();		
+		});
     }
 	});
 });
